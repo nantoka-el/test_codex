@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bed Exercise Timer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <section id="carnitine-check" class="screen active">
+    <h1>カルニチン飲んだ？</h1>
+    <button id="carn-yes">はい</button>
+    <button id="carn-no">いいえ</button>
+  </section>
+  <section id="drink-reminder" class="screen">
+    <p>カルニチンを飲んでからまた再開しよう！</p>
+    <button id="recheck">OK</button>
+  </section>
+  <section id="gacha" class="screen">
+    <h1>今日のメニュー</h1>
+    <div id="menu-list"></div>
+    <button id="start-routine">スタート</button>
+  </section>
+  <section id="exercise" class="screen">
+    <h1 id="exercise-name"></h1>
+    <div id="timer-container">
+      <svg id="timer-svg" width="200" height="200">
+        <circle cx="100" cy="100" r="90" stroke="#eee" stroke-width="15" fill="none" />
+        <circle id="timer-circle" cx="100" cy="100" r="90" stroke="#ff8" stroke-width="15" fill="none" stroke-dasharray="565" stroke-dashoffset="565" />
+      </svg>
+      <div id="timer-text">0</div>
+    </div>
+    <p id="instruction"></p>
+    <button id="complete">完了</button>
+  </section>
+  <section id="stamp" class="screen">
+    <h1>お疲れさま！</h1>
+    <p>今日のスタンプをゲット！</p>
+    <p id="streak"></p>
+    <button id="finish">閉じる</button>
+  </section>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
