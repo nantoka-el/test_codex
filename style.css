@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #fafafa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.screen {
+  display: none;
+  padding: 40px 20px;
+}
+.screen.active {
+  display: block;
+}
+button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #ffd;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+  transition: transform 0.1s ease;
+}
+button:active {
+  transform: scale(0.95);
+}
+#timer-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}
+#timer-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+}
+#menu-list {
+  margin: 20px auto;
+}
+#menu-list div {
+  margin: 5px;
+}
